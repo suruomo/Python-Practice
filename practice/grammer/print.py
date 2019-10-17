@@ -2,6 +2,7 @@ import math
 print(2**3)
 s="Hello World"
 print(str(s))
+# 输出格式化
 print('{}网址： "{}!"'.format('菜鸟教程', 'www.runoob.com'))
 print('{0} 和 {1}'.format('Google', 'Runoob'))
 print('{1} 和 {0}'.format('Google', 'Runoob'))
