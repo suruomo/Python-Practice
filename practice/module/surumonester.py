@@ -1,7 +1,7 @@
 """递归打印嵌套list"""
 
 
-def print_lol(aslist,level):
+def print_lol(aslist,level=0):
     for item in aslist:
         if isinstance(item, list):
             print_lol(item,level+1)
