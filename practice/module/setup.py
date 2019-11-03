@@ -1,9 +1,11 @@
 from distutils.core import setup
 
 setup(
-    name="nester",
+    name="suruomonester",
     version='1.0.0',
-    py_modules=['nester'],
+    py_modules=['suruomonester'],
     author="suruomo",
+    author_email="suruomo@hotmail.com",
+    url="http://github.com/suruomo",
     description="A simple printer for nested lists",
 )
