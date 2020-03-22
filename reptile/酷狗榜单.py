@@ -21,7 +21,7 @@ def get_info(url, file):
             'title': title.get_text().strip(),
             'time': time.get_text().strip()
         }
-        string="{: <10}{: <30}{: <10}\n".format(data['rank'],data['title'],data['time'])#格式化输出
+        string = "{: <10}{: <30}{: <10}\n".format(data['rank'], data['title'], data['time'])  # 格式化输出
         file.write(string)
 
 
@@ -43,6 +43,4 @@ with open(r'F:\Python code\爬虫案例/kugou_500.txt', 'w', encoding=encoding) 
     f.write("排名      歌手         歌名          长度\n")
     for url in urls:
         get_info(url, f)
-        time.sleep(1) #缓冲一秒,防止请求频率过快
-
-
+        time.sleep(1)  # 缓冲一秒,防止请求频率过快
